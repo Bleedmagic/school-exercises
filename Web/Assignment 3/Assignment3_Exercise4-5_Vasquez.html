@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vasquez / Web-based World Clock</title>
+		<link rel="icon" href="../../favicon.ico" />
+
+		<script>
+			function updateTime(countries) {
+				var now = new Date();
+
+				countries.forEach(function (country) {
+					var timeZone = getTimeZone(country);
+					var localTime = new Date(
+						now.toLocaleString("en-US", { timeZone: timeZone })
+					);
+
+					var hours = localTime.getHours();
+					var minutes = localTime.getMinutes();
+					var seconds = localTime.getSeconds();
+
+					if (minutes < 10) minutes = "0" + minutes;
+					if (seconds < 10) seconds = "0" + seconds;
+
+					var timeOfDay;
+					if (hours >= 12 && hours < 24) {
+						timeOfDay = "PM";
+					} else {
+						timeOfDay = "AM";
+					}
+
+					if (hours > 12) {
+						hours -= 12;
+					} else if (hours === 0) {
+						hours = 12;
+					}
+
+					var currentTime =
+						hours + ":" + minutes + ":" + seconds + " " + timeOfDay;
+
+					var color;
+					var timeColor = "white";
+					if (country === "Denmark") {
+						color = "#A40000";
+					} else if (country === "Venezuela") {
+						color = "#FFD700";
+					}
+
+					document.getElementById("clock" + country).innerHTML =
+						"<span style='color: " +
+						color +
+						";'>" +
+						country +
+						"</span>: " +
+						"<span style='color: " +
+						timeColor +
+						";'>" +
+						currentTime +
+						"</span>";
+				});
+			}
+
+			function getTimeZone(country) {
+				switch (country) {
+					case "Denmark":
+						return "Europe/Copenhagen";
+					case "Venezuela":
+						return "America/Caracas";
+					default:
+						return "UTC";
+				}
+			}
+
+			function toggleClock(country) {
+				var myClock = document.getElementById("clockContainer" + country);
+				var displaySetting = myClock.style.display;
+				var clockButton = document.getElementById("clockButton" + country);
+
+				if (displaySetting == "block") {
+					myClock.style.display = "none";
+					clockButton.innerHTML = "Show " + country + " Clock";
+					updateBackground();
+				} else {
+					myClock.style.display = "block";
+					clockButton.innerHTML = "Hide " + country + " Clock";
+					updateBackground();
+				}
+			}
+
+			function updateBackground() {
+				var denmarkVisible =
+					document.getElementById("clockContainerDenmark").style.display ===
+					"block";
+				var venezuelaVisible =
+					document.getElementById("clockContainerVenezuela").style.display ===
+					"block";
+
+				if (denmarkVisible && venezuelaVisible) {
+					document.body.style.background =
+						"url(./denmark.png) left/50% no-repeat, url(./venezuela.png) right/50% no-repeat";
+					document.body.style.backgroundSize = "50% 100%";
+					document.querySelector("h1").style.color = "#ff1493";
+				} else if (denmarkVisible) {
+					document.body.style.background =
+						"url(./denmark.png) no-repeat center center fixed";
+					document.body.style.backgroundSize = "cover";
+					document.querySelector("h1").style.color = "gold";
+				} else if (venezuelaVisible) {
+					document.body.style.background =
+						"url(./venezuela.png) no-repeat center center fixed";
+					document.body.style.backgroundSize = "cover";
+					document.querySelector("h1").style.color = "teal";
+				} else {
+					document.body.style.background = "black";
+					document.querySelector("h1").style.color = "#ff69b4";
+				}
+			}
+
+			setInterval(function () {
+				updateTime(["Denmark", "Venezuela"]);
+			}, 1000);
+		</script>
+
+		<style>
+			body {
+				background-color: black;
+				color: white;
+				font-family: "Courier New", monospace;
+				text-align: center;
+				padding-top: 1px;
+				min-height: 100vh;
+				margin: 0;
+			}
+
+			h1 {
+				font-size: 100px;
+				color: #ff69b4;
+				margin-bottom: 20px;
+			}
+
+			.clock {
+				font-size: 50px;
+				font-family: "Courier New", monospace;
+				font-weight: bold;
+				color: #ff69b4;
+				background-color: black;
+				padding: 20px;
+				border: 5px solid #ff69b4;
+				text-align: center;
+				width: fit-content;
+				margin: 0 auto;
+				border-radius: 15px;
+			}
+
+			.clockContainer {
+				display: none;
+				margin: 20px;
+			}
+
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			button {
+				margin: 20px;
+				font-size: 20px;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 10px;
+				background-color: #ff69b4;
+				color: black;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #ff1493;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Web-based World Clock</h1>
+
+		<div class="container">
+			<button onclick="toggleClock('Denmark')" id="clockButtonDenmark">
+				Show Denmark Clock
+			</button>
+			<button onclick="toggleClock('Venezuela')" id="clockButtonVenezuela">
+				Show Venezuela Clock
+			</button>
+		</div>
+
+		<div class="clockContainer" id="clockContainerDenmark">
+			<div class="clock" id="clockDenmark"></div>
+		</div>
+
+		<div class="clockContainer" id="clockContainerVenezuela">
+			<div class="clock" id="clockVenezuela"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BagKat / Census</title>
+		<link rel="icon" href="./favicon.ico" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="header-bar">
+			<div class="left-header">
+				<a href="./Quiz2_CPV.html">
+					<img
+						src="./bk_logo.png"
+						width="100px"
+						alt="Barangay Bagong Katipunan Logo"
+				/></a>
+
+				<h1>Barangay Bagong Katipunan</h1>
+			</div>
+			<nav class="right-header">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#" class="active">Census</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Events</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main-content">
+			<section class="census-form">
+				<h2>Census Information Collection</h2>
+				<p id="infoMessage">
+					Please provide the following information to complete the census:
+				</p>
+				<p id="thankYouMessage" class="hidden">
+					Thank you for participating in the census!
+				</p>
+				<button id="beginCensusBtn" class="btn">Begin Census</button>
+				<button id="resetCensusBtn" class="btn hidden">Reset Census</button>
+
+				<div id="profileSummary" class="profile hidden">
+					<h3>Profile Summary</h3>
+					<br />
+					<p id="censusName"></p>
+					<p id="censusPopulation"></p>
+					<p id="censusAddress"></p>
+				</div>
+			</section>
+			<section class="info-section">
+				<h3>Community Engagement</h3>
+				<p>
+					Participating in the census helps us understand our community's needs
+					and improve our services.
+				</p>
+				<br />
+				<h4>Upcoming Events</h4>
+				<p>
+					Join us for a community cleanup drive on October 10th! Together, let's
+					make our barangay cleaner and greener!
+				</p>
+			</section>
+		</main>
+
+		<footer class="footer-bar">
+			<p>© 2024 Barangay Bagong Katipunan. All rights reserved.</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
