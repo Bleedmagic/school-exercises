@@ -1,0 +1,18 @@
+D:\Workspace\Programming\_Projects\VB\Working With Menus\bin\Debug\net6.0-windows\Working With Menus.exe
+D:\Workspace\Programming\_Projects\VB\Working With Menus\bin\Debug\net6.0-windows\Working With Menus.deps.json
+D:\Workspace\Programming\_Projects\VB\Working With Menus\bin\Debug\net6.0-windows\Working With Menus.runtimeconfig.json
+D:\Workspace\Programming\_Projects\VB\Working With Menus\bin\Debug\net6.0-windows\Working With Menus.dll
+D:\Workspace\Programming\_Projects\VB\Working With Menus\bin\Debug\net6.0-windows\Working With Menus.pdb
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working_With_Menus.Form1.resources
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working With Menus.vbproj.GenerateResource.cache
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working With Menus.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working With Menus.AssemblyInfoInputs.cache
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working With Menus.AssemblyInfo.vb
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working With Menus.vbproj.CoreCompileInputs.cache
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working With Menus.dll
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\refint\Working With Menus.dll
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working With Menus.pdb
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working With Menus.genruntimeconfig.cache
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\ref\Working With Menus.dll
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working_With_Menus.Resources.resources
+D:\Workspace\Programming\_Projects\VB\Working With Menus\obj\Debug\net6.0-windows\Working_With_Menus.ChildForm.resources

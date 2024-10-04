@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Working With Menus/1.0.0": {
+        "runtime": {
+          "Working With Menus.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Working With Menus/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
