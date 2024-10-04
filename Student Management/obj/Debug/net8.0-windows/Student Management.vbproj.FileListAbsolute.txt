@@ -1,0 +1,21 @@
+D:\Workspace\Programming\_Projects\VB\Student Management\bin\Debug\net8.0-windows\Student Management.exe
+D:\Workspace\Programming\_Projects\VB\Student Management\bin\Debug\net8.0-windows\Student Management.deps.json
+D:\Workspace\Programming\_Projects\VB\Student Management\bin\Debug\net8.0-windows\Student Management.runtimeconfig.json
+D:\Workspace\Programming\_Projects\VB\Student Management\bin\Debug\net8.0-windows\Student Management.dll
+D:\Workspace\Programming\_Projects\VB\Student Management\bin\Debug\net8.0-windows\Student Management.pdb
+D:\Workspace\Programming\_Projects\VB\Student Management\bin\Debug\net8.0-windows\MySql.Data.dll
+D:\Workspace\Programming\_Projects\VB\Student Management\bin\Debug\net8.0-windows\MySql.Data.xml
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.vbproj.AssemblyReference.cache
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student_Management.Form1.resources
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student_Management.Resources.resources
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.vbproj.GenerateResource.cache
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.AssemblyInfoInputs.cache
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.AssemblyInfo.vb
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.vbproj.CoreCompileInputs.cache
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student .83B7D4FB.Up2Date
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.dll
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\refint\Student Management.dll
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.pdb
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\Student Management.genruntimeconfig.cache
+D:\Workspace\Programming\_Projects\VB\Student Management\obj\Debug\net8.0-windows\ref\Student Management.dll
